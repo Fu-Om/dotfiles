@@ -1,0 +1,46 @@
+# [ -f ~/.aliases] && source ~/.aliases
+# Need to add . ~/.aliases to bashrc
+# Add Escape and Caps swap
+setxkbmap -option caps:swapescape
+#setxkbmap -option caps:escape
+
+# Disable C-X, C-Q
+stty -ixon
+# Allow easy cd 
+shopt -s autocd
+# Allow vim to run aliases
+shopt -s expand_aliases
+
+# history settings
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+# append to the history file, don't overwrite it
+shopt -s histappend
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+#HISTSIZE=1000
+#HISTFILESIZE=2000
+HISTSIZE= HISTFILESIZE= # Infinite history.
+# append last command to history and reload after each command
+# enabling to share tmux history
+export PROMPT_COMMAND="history -a; history -n"
+
+# aliases
+alias ll='ls -la'
+alias v='vim'
+
+# git aliases
+alias gs='git status'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gpom='git push origin master'
+
+# apt
+alias agi='sudo apt install'
+alias agu='sudo apt update'
+alias agug='sudo apt upgrade'
+
+# conda
+alias sa='conda activate'
+alias sd='conda deactivate'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'

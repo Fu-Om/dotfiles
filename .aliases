@@ -43,4 +43,7 @@ alias agug='sudo apt upgrade'
 # conda
 alias sa='conda activate'
 alias sd='conda deactivate'
+
+# Git bare repo for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+

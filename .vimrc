@@ -1,6 +1,6 @@
 " setting
 " leaader key
-let mapleader =","
+let mapleader=','
 " change coding to utf-8
 set fenc=utf-8
 " enable switching buffers without saving
@@ -120,6 +120,8 @@ Plug 'davidhalter/jedi-vim', {'for': 'python'} "activate when editing python fil
 
 Plug 'vimwiki/vimwiki'
 
+Plug 'ycm-core/YouCompleteMe'
+
 " Initialize plugin system
 call plug#end()
 
@@ -127,3 +129,6 @@ call plug#end()
 " vim-instant-markdown config
 let g:instant_markdown_autostart = 0
 nnoremap <leader>md :InstantMarkdownPreview<CR>
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/Vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]

@@ -47,3 +47,13 @@ alias sd='conda deactivate'
 # Git bare repo for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+# My functions to run on current shell
+function mkcd() {
+  if [ "$1" != "" ]; then
+    mkdir $1
+    cd $1
+  else
+    echo "No target directory"
+  fi
+}
+

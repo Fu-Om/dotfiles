@@ -9,6 +9,7 @@ setlocal expandtab
 setlocal tabstop=4
 
 " Abbreviations
-iabbrev_env #!/usr/bin/env python<CR>
-
-
+iabbrev _#! #!/usr/bin/env python
+iabbrev _main if __name__ == '__main__':<CR>    <++>
+iabbrev _int <++> = int(input()) 
+iabbrev _list <++> = list(map(int, input().split()))

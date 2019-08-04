@@ -1,6 +1,6 @@
-" setting
+"setting
 " leaader key
-let mapleader=','
+let mapleader="\<Space>"
 " change coding to utf-8
 set fenc=utf-8
 " enable switching buffers without saving
@@ -91,15 +91,15 @@ let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 
 " Navigating with guides
-inoremap <leader>m <Esc>i<++>
-vnoremap <leader>m <Esc>i<++>
-map <leader>m <Esc>i<++>
-inoremap <leader>/ <Esc>/<++><Enter>"_c4l
-vnoremap <leader>/ <Esc>/<++><Enter>"_c4l
-map <leader>/ <Esc>/<++><Enter>"_c4l
-inoremap <leader>? <Esc>?<++><Enter>"_c4l
-vnoremap <leader>? <Esc>?<++><Enter>"_c4l
-map <leader>? <Esc>?<++><Enter>"_c4l
+inoremap ,m <Esc>i<++>
+vnoremap ,m <Esc>i<++>
+map ,m <Esc>i<++>
+inoremap ,/ <Esc>/<++><Enter>"_c4l
+vnoremap ,/ <Esc>/<++><Enter>"_c4l
+map ,/ <Esc>/<++><Enter>"_c4l
+inoremap ,? <Esc>?<++><Enter>"_c4l
+vnoremap ,? <Esc>?<++><Enter>"_c4l
+map ,? <Esc>?<++><Enter>"_c4l
 
 
 " vim-plug install
@@ -114,7 +114,7 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 " conda env setup
-Plug 'cjrh/vim-conda'
+Plug 'cjrh/vim-conda', {'for': 'python'} 
 
 Plug 'davidhalter/jedi-vim', {'for': 'python'} "activate when editing python files  
 
@@ -132,3 +132,5 @@ nnoremap <leader>md :InstantMarkdownPreview<CR>
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/Vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+" jedi-vim 
+let g:jedi#completions_command = "<C-a>" 

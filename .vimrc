@@ -57,7 +57,7 @@ set ignorecase
 " Recognize upper case
 set smartcase
 
-"set autoindent
+nnoremap <F8> :setlocal noautoindent
 " Indentation space
 set shiftwidth=2
 " Tab space

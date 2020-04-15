@@ -15,7 +15,8 @@ iabbrev _main if __name__ == '__main__':<CR><++>
 iabbrev _int1 int(input()) 
 iabbrev _map map(int, input().split())
 iabbrev _li list(map(int, input().split()))
-iabbrev _li2 [list(map(int, input().split())) for _ in range(N)] 
-iabbrev _tu list(map(int, input().split()))
+iabbrev _li2 [list(map(int, input().split())) for _ in range(<++>)]
+iabbrev _tu tuple(map(int, input().split()))
+iabbrev _tu2 [tuple(map(int, input().split())) for _ in range(<++>)]
 iabbrev _p print(<++>) 
 iabbrev _pdb import pdb; pdb.set_trace()

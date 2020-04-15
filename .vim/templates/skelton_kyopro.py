@@ -2,7 +2,8 @@
 import sys
 from collections import Counter
 from itertools import permutations, combinations
-from math import ceil, floor, gcd
+from fractions import gcd
+from math import ceil, floor
 sys.setrecursionlimit(10 ** 6)
 
 def input():

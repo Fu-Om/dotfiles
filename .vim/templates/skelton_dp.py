@@ -1,14 +1,12 @@
 def chmin(a, b):
     if a > b:
-        a = b
-        return True
+        return b
     else:
-        return False
+        return a
 
 def chmax(a, b):
     if a < b:
-        a = b
-        return True
+        return b
     else:
-        return False
+        return a
 

@@ -8,6 +8,9 @@ setlocal expandtab
 " Tab space
 setlocal tabstop=4
 
+" Insert kyopro skelton
+nnoremap <F4> :read ~/.vim/templates/skelton_dp.py<CR>
+nnoremap <F5> :0read ~/.vim/templates/skelton_kyopro.py<CR>
 
 " Abbreviations
 iabbrev _#! #!/usr/bin/env python

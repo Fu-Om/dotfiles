@@ -70,10 +70,6 @@ set tabstop=2
 " Press esc 2 times to stop search highlight
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-" Insert kyopro skelton
-nnoremap <F4> :0read ~/.vim/templates/skelton_dp.py<CR>
-nnoremap <F5> :0read ~/.vim/templates/skelton_kyopro.py<CR>
-
 " Run current line in bash
 nnoremap <F6> :exec '!'.getline('.')
 

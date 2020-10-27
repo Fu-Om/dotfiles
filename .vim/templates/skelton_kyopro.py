@@ -6,11 +6,14 @@ from itertools import permutations, combinations
 from math import gcd
 from math import ceil, floor
 import bisect
-sys.setrecursionlimit(10 ** 6)
+sys.setrecursionlimit(10 ** 9)
 inf = float("inf")
-
-def input():
-    return sys.stdin.readline()[:-1]
+readline = sys.stdin.buffer.readline
+ns = lambda: readline().rstrip()
+ni = lambda: int(readline().rstrip())
+nm = lambda: map(int, readline().split())
+nl = lambda: list(map(int, readline().split()))
+nt = lambda: tuple(map(int, readline().split()))
 
 def main():
     <++> 

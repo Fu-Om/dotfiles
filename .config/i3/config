@@ -108,7 +108,7 @@ bindsym $mod+a focus parent
 set $workspace1 "1: terminal"
 set $workspace2 "2: chrome"
 set $workspace3 "3: R"
-set $workspace8 "8: _slack"
+set $workspace8 "8: slack"
 set $workspace9 "9: skype"
 
 # switch to workspace
@@ -137,7 +137,7 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # default workspace
-assign [class="slack"] $workspace8
+assign [class="Slack"] $workspace8
 assign [class="Skype"] $workspace9
 
 # reload the configuration file

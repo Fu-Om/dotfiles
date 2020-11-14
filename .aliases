@@ -34,7 +34,7 @@ alias gs='git status'
 alias ga='git add'
 alias gcm='git commit -m'
 alias gpom='git push origin master'
-alias git long='git log --oneline --decorate --graph --all'
+alias gitlong='git log --oneline --decorate --graph --all'
 
 # apt
 alias agi='sudo apt install'

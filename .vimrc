@@ -72,6 +72,8 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " Run current line in bash
 nnoremap <F6> :exec '!'.getline('.')
+" Start edit .vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " remapping keys
 " change split hotkey

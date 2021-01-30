@@ -23,3 +23,9 @@ iabbrev _tu tuple(map(int, input().split()))
 iabbrev _tu2 [tuple(map(int, input().split())) for _ in range(<++>)]
 iabbrev _p print(<++>) 
 iabbrev _pdb import pdb; pdb.set_trace()
+iabbrev <buffer> im import
+iabbrev <buffer> ret return
+iabbrev <buffer> yi yield 
+iabbrev <buffer> tr True
+iabbrev <buffer> fa False
+iabbrev <buffer> br break

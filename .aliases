@@ -32,6 +32,7 @@ alias v='vim'
 # git aliases
 alias gs='git status'
 alias ga='git add'
+alias gau='git add -u .'
 alias gcm='git commit -m'
 alias gpom='git push origin master'
 alias gitlong='git log --oneline --decorate --graph --all'
